@@ -1,9 +1,21 @@
+.container {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*** Quote ***/
+
 .quote {
   font-family: 'Cardo', sans-serif;
   font-size: 1.5em;
   width: 600px;
   height: auto;
-  margin: 0 auto;
+  margin: 15px auto;
   background-color: #efefef;
   padding: 20px;
   background-color: rgba(255,255,255,0.9);;
