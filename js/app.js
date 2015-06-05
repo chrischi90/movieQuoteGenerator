@@ -19,18 +19,24 @@ $(document).ready(function () {
 			"King Kong ain't got shit on me! @Alonzo Harris",
 			"If my calculations are correct, when this baby hits 88 miles per hour... you're gonna see some serious shit. @Doc Brown",
 			"Do or do not. There is no try @Yoda",
+			"Oh deeeaaaar we are in trouble. @Argus Filch",
+			"Suck my fat one, you cheap dime store hood. @Gordie Lachance",
+			"Hold on to your butts. @Ray Arnold",
+			"I'm sorry Dave. I'm afraid I can't do that. @HAL",
+			"Everybody good? Plenty of slaves for my robot colony? @TARS",
 			
+
 		];
 
 		var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 		var quoteSplit = randomQuote.split("@");
 		$('.saying').text(quoteSplit[0]);
-		$('.author').text(quoteSplit[1]);
+		$('.author').text(" - " + quoteSplit[1]);
 
 
 	}
 
-	$('.button').on("click", function(){
+	$('.newQuote').on("click", function(){
 		generate();
 	});
 
